@@ -1,0 +1,12 @@
+body{
+    background-image: url(1.png);
+   
+}
+#main{
+    margin-top: 20px;
+}
+#survey-form{
+    background-color: #003366;
+    color: white;
+    margin: 20px 20%;
+}

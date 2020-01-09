@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css" text="text/css">
+    <title>BuildASurveyForm</title>
+</head>
+<body>
+
+    <div id="main">
+        <h1 class="text-center" id="tittle">freeCodeCamp Survey Form </h1>
+        <p class="text-center" id="description">Thank you for talking time to help us improve the platform</p>
+        <form id="survey-form" class="container">
+        <div class="form-group">
+            <label for="name" id="name-label">Name</label>
+            <input type="name" class="form-control" id="name"  placeholder="Enter name">
+        </div>
+        <div class="form-group">
+            <label for="email" id="email-label">Email address</label>
+            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+        </div>
+        <div class="form-group">
+            <label for="number" id="number-label">Age(optional)</label>
+            <input type="number" class="form-control" id="number" placeholder="number" required minlength="1" maxlength="3">
+        </div>
+
+        <div class="form-group col-md-4">
+            <label for="inputState" id="inputState-label">Which option best describes your current role?</label>
+            <select id="inputState" class="form-control">
+              <option selected>Select current role</option>
+              <option>Student</option>
+              <option>Full time job</option>
+              <option>Full time learn</option>
+              <option>Prefer not to say</option>
+              <option>Other</option>
+            </select>
+        </div>
+
+        
+        <div class="form-check ">
+            <label for="form-check" id="form-check-label">Would you recommend freeCodeCamp to your friend?</label><br>
+            <input class="form-check-input" type="radio" name="RadioOptions" id="Radio1" value="option1">
+            <label class="form-check-label1" for="Radio1">Definitely</label>
+        </div>
+        <div class="form-check ">
+            <input class="form-check-input" type="radio" name="RadioOptions" id="Radio2" value="option2">
+            <label class="form-check-label2" for="Radio2">Maybe</label>
+        </div>
+        <div class="form-check ">
+            <input class="form-check-input" type="radio" name="RadioOptions" id="Radio3" value="option3">
+            <label class="form-check-label3" for="Radio3">Not sure</label>
+        </div>
+        <div class="form-check">
+            <label for="form-check" id form-check-label>What would you like to see improved? (Check all that apply)</label>
+            <div>
+                <input class="form-check-input" type="checkbox" id="Checkbox1">
+                <label class="form-check-label" for="Checkbox1">Front-end Projects</label>
+            </div>
+            <div>
+                <input class="form-check-input" type="checkbox" id="Checkbox2">
+             <label class="form-check-label" for="Checkbox2">Back-end Projects</label>
+            </div>
+            <div>
+                <input class="form-check-input" type="checkbox" id="Checkbox3">
+                <label class="form-check-label" for="Checkbox3">Data Visualization</label>
+            </div>
+            <div>
+                <input class="form-check-input" type="checkbox" id="Checkbox4">
+                <label class="form-check-label" for="Checkbox4">Challenges</label>
+            </div>
+            <div>
+                <input class="form-check-input" type="checkbox" id="Checkbox5">
+                <label class="form-check-label" for="Checkbox5">Open Source Community</label>
+            </div>
+            <div>
+                <input class="form-check-input" type="checkbox" id="Checkbox6">
+                <label class="form-check-label" for="Checkbox6">Gitter Helps Rooms</label>
+            </div>
+            <div>
+                <input class="form-check-input" type="checkbox" id="Checkbox7">
+                <label class="form-check-label" for="Checkbox7">Videos</label>
+            </div>
+            <div>
+                <input class="form-check-input" type="checkbox" id="Checkbox8">
+                <label class="form-check-label" for="Checkbox8">City Meetups</label>
+            </div>
+            <div>
+                <input class="form-check-input" type="checkbox" id="Checkbox9">
+                <label class="form-check-label" for="Checkbox9">Wiki</label>
+            </div>
+            <div>
+                <input class="form-check-input" type="checkbox" id="Checkbox10">
+                <label class="form-check-label" for="Checkbox10">Forum</label>
+            </div>
+            <div>
+                <input class="form-check-input" type="checkbox" id="Checkbox11">
+                <label class="form-check-label" for="Checkbox11">Additional Courses</label>
+            </div>
+            <div>
+                <label for="comment" id="comment-label">Any comments or suggestions?</label><br>
+                <input type="text" id="comment" placeholder="Enter your comment here...">
+            </div>
+        </div><br>
+
+        <button type="submit" class="btn btn-lg btn-block" id="submit">Submit</button><br>
+    </form>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

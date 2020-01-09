@@ -2,12 +2,14 @@
     margin-top: 20px;
 }
 #img-div{
-    margin: 10px 100px;
+    margin: 10px 30%;
     background-color:#F4F4F4;
 }
 #tribute-info{
-    margin: 10px 600px;
+    margin: 10px 30%;
 }
 #img{
-    margin: 10px 400px;
+    
+    height: auto;
+    max-width: 100%;
 }
